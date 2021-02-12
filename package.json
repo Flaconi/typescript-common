@@ -1,5 +1,5 @@
 {
-  "name": "typescript-common",
+  "name": "@flaconi/typescript-common-xyz",
   "version": "1.0.5-beta",
   "description": "A node library with common functions",
   "main": "dist/index.js",
