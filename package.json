@@ -1,6 +1,6 @@
 {
   "name": "typescript-common",
-  "version": "1.0.0-beta",
+  "version": "1.0.5-beta",
   "description": "A node library with common functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,12 @@
     "prettier": "prettier  --write ./{src,__tests__}/**/**/*.ts*",
     "build": "tsc"
   },
-  "publishConfig": { "access": "public", "branches": ["master"] },
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
+  },
   "dependencies": {
     "winston": "^3.2.1"
   },
