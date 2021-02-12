@@ -13,11 +13,13 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        run: npm ci
+        run: yarn
       - name: Run tests
-        run: npm test
+        run: yarn prettier && yarn lint && yarn test
+      - name: Build
+        run: yarn build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run semantic-release
+        run: yarn semantic-release
