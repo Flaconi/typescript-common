@@ -23,6 +23,7 @@
     "prettier": "prettier  --write ./{src,__tests__}/**/**/*.ts*",
     "build": "tsc"
   },
+  "publishConfig": { "access": "public", "branches": ["master"] },
   "dependencies": {
     "winston": "^3.2.1"
   },
